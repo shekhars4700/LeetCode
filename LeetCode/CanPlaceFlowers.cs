@@ -10,9 +10,9 @@ namespace LeetCode
     {
         public bool CanPlaceFlowers(int[] flowerbed, int n)
         {
-            bool result = false;
             int newFlowerCount = 0;
-            if (n == 0) {
+            if (n == 0)
+            {
                 return true;
             }
             else if (flowerbed.Length == 1)
@@ -21,30 +21,33 @@ namespace LeetCode
                 {
                     return true;
                 }
+
             }
             else if (flowerbed.Length == 2)
             {
-                if (flowerbed.Contains(1))
+                if (!flowerbed.Contains(1))
                 {
-                    return false;
+                    newFlowerCount++;
                 }
             }
-            for (int i = 1; i < flowerbed.Length -1; i++)
+            else
             {
-                if (i == 1 && flowerbed[i - 1] == 0 && flowerbed[i] ==0) {
-                    flowerbed[i - 1] = 1;
-                    newFlowerCount++;
-                }
-                else if (flowerbed[i - 1] == 0 && flowerbed[i] != 1 && flowerbed[i + 1] == 0) {
-                    flowerbed[i] = 1;
-                    newFlowerCount++;
-                }
-                else if (i+1 == flowerbed.Length -1  && flowerbed[i] == 0 && flowerbed[i +1] == 0) {
-                    flowerbed[i] = 1;
-                    newFlowerCount++;
+                for (int i = 0; i < flowerbed.Length; i++)
+                {
+                    if (flowerbed[i] == 0)
+                    {
+                        int prev = i == 0 ? 0 : flowerbed[i - 1];
+                        int next = i == flowerbed.Length - 1 ? 0 : flowerbed[i + 1];
+
+                        if (prev == 0 && next == 0)
+                        {
+                            flowerbed[i] = 1;
+                            newFlowerCount++;
+                        }
+                    }
                 }
             }
-            return newFlowerCount <= n ? true:false;
+            return n <= newFlowerCount ? true : false;
         }
     }
 }

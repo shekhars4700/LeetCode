@@ -8,7 +8,8 @@ namespace LeetCode
 
         {
             Solution solution = new Solution();
-           Console.WriteLine(solution.CanPlaceFlowers(new int[] { 0, 0, 0 }, 2));
+            Console.WriteLine(solution.MajorityElement(new int[] { 3, 2, 3 }));
+            Console.WriteLine(solution.MajorityElement(new int[] { 2, 2, 1, 1, 1, 2, 2 }));
         }
     }
 }
