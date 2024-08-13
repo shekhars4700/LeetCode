@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.Medium;
+using System;
 
 namespace LeetCode
 {
@@ -8,8 +9,15 @@ namespace LeetCode
 
         {
             Solution solution = new Solution();
-            Console.WriteLine(solution.MajorityElement(new int[] { 3, 2, 3 }));
-            Console.WriteLine(solution.MajorityElement(new int[] { 2, 2, 1, 1, 1, 2, 2 }));
+
+
+
+            #region Medium
+            MediumSolution mediumSolution = new MediumSolution();
+            mediumSolution.LongestConsecutive(new int[] { 100, 4, 200, 1, 3, 2 });
+            #endregion
+
+
         }
     }
 }
