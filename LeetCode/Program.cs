@@ -21,9 +21,21 @@ namespace LeetCode
 
             #region TWO POINTERS
             TwoPointer twoPointer = new TwoPointer();
-            Console.WriteLine(twoPointer.IsPalindrome("Was it a car or a cat I saw?"));
-            Console.WriteLine(twoPointer.IsPalindrome("tab a cat"));
-            Console.WriteLine(twoPointer.IsPalindrome(",."));
+
+            #region Palindrom
+            //Console.WriteLine(twoPointer.IsPalindrome("Was it a car or a cat I saw?"));
+            //Console.WriteLine(twoPointer.IsPalindrome("tab a cat"));
+            //Console.WriteLine(twoPointer.IsPalindrome(",."));
+            #endregion
+
+
+            #region TwoSum Sorted Array
+            Console.WriteLine(twoPointer.TwoSum(new int[] { 2, 7, 11, 15 },9));
+            Console.WriteLine(twoPointer.TwoSum(new int[] { 2, 3, 4 }, 6));
+            Console.WriteLine(twoPointer.TwoSum(new int[] { -1, 0 }, -1));
+            #endregion
+
+
             #endregion
 
         }
