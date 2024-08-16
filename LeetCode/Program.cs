@@ -30,9 +30,15 @@ namespace LeetCode
 
 
             #region TwoSum Sorted Array
-            Console.WriteLine(twoPointer.TwoSum(new int[] { 2, 7, 11, 15 },9));
-            Console.WriteLine(twoPointer.TwoSum(new int[] { 2, 3, 4 }, 6));
-            Console.WriteLine(twoPointer.TwoSum(new int[] { -1, 0 }, -1));
+            //Console.WriteLine(twoPointer.TwoSum(new int[] { 2, 7, 11, 15 },9));
+            //Console.WriteLine(twoPointer.TwoSum(new int[] { 2, 3, 4 }, 6));
+            //Console.WriteLine(twoPointer.TwoSum(new int[] { -1, 0 }, -1));
+            #endregion
+
+            #region 3Sum 
+            Console.WriteLine(twoPointer.ThreeSum(new int[] { -1, 0, 1, 2, -1, -4 }));
+            Console.WriteLine(twoPointer.ThreeSum(new int[] { 0, 1, 1 }));
+            Console.WriteLine(twoPointer.ThreeSum(new int[] { 0, 0, 0,0 }));
             #endregion
 
 
