@@ -12,6 +12,7 @@ namespace LeetCode.Two_Pointer
         {
             int res = 0, area = 0, left = 0, right = height.Length - 1;
 
+
             while (left < right)
             {
 
