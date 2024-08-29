@@ -36,13 +36,24 @@ namespace LeetCode
             #endregion
 
             #region 3Sum 
-            Console.WriteLine(twoPointer.ThreeSum(new int[] { -1, 0, 1, 2, -1, -4 }));
-            Console.WriteLine(twoPointer.ThreeSum(new int[] { 0, 1, 1 }));
-            Console.WriteLine(twoPointer.ThreeSum(new int[] { 0, 0, 0,0 }));
+            //Console.WriteLine(twoPointer.ThreeSum(new int[] { -1, 0, 1, 2, -1, -4 }));
+            //Console.WriteLine(twoPointer.ThreeSum(new int[] { 0, 1, 1 }));
+            //Console.WriteLine(twoPointer.ThreeSum(new int[] { 0, 0, 0,0 }));
+            #endregion
+
+
+            #region MaxArea
+            Console.WriteLine(twoPointer.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
+            Console.WriteLine(twoPointer.MaxArea(new int[] { 1, 1 }));
             #endregion
 
 
             #endregion
+
+
+
+
+
 
         }
     }

@@ -10,26 +10,27 @@ namespace LeetCode.Two_Pointer
     {
         public int MaxArea(int[] height)
         {
-            int res = 0, area = 0, left = 0, right = height.Length - 1;
-
-
-            while (left < right)
+            int i = 0;
+            int j = height.Length - 1;
+            int maxarea = 0;
+            while (i < j)
             {
-
-                area = (Math.Min(height[left], height[right])) * (right - left);
-                res = Math.Max(area, res);
-
-                if (height[left] < height[right])
+                int area = 0;
+                if (height[i] <= height[j])
                 {
-                    left++;
+                    area = height[i] * j;
+                    maxarea = maxarea > area ? maxarea : area;
+                    i++;
                 }
-                else
+                else if (height[j] < height[i])
                 {
-                    right--;
+                    area = height[j] * (j-1);
+                    maxarea = maxarea > area ? maxarea : area;
+                    j--;
                 }
-
             }
-            return res;
+
+            return maxarea;
         }
     }
 }
