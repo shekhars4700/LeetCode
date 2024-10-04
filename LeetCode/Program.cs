@@ -1,4 +1,6 @@
 ﻿using LeetCode.Medium;
+using LeetCode.Sliding_Window;
+using LeetCode.Stack;
 using LeetCode.Two_Pointer;
 using System;
 
@@ -15,6 +17,7 @@ namespace LeetCode
 
             #region Medium
             MediumSolution mediumSolution = new MediumSolution();
+            SlidingWindow slidingWindow = new SlidingWindow();
             //mediumSolution.LongestConsecutive(new int[] { 100, 4, 200, 1, 3, 2 });
             #endregion
 
@@ -43,8 +46,8 @@ namespace LeetCode
 
 
             #region MaxArea
-            Console.WriteLine(twoPointer.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
-            Console.WriteLine(twoPointer.MaxArea(new int[] { 1, 1 }));
+            //Console.WriteLine(twoPointer.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
+            //Console.WriteLine(twoPointer.MaxArea(new int[] { 1, 1 }));
             #endregion
 
 
@@ -52,6 +55,51 @@ namespace LeetCode
 
 
 
+            #region SlidingWindow
+            //Console.WriteLine(slidingWindow.printFirstNegativeInteger(new long[] { -8, 2, 3, -6, 10 },5,2));
+
+            // Console.WriteLine(slidingWindow.LengthOfLongestSubstring("abcabcbb"));
+
+            #endregion
+
+
+
+            #region Stack Questions
+
+            //int[] arr = new int[] { 6, 2, 5, 4, 5, 1, 6 };
+            //var right = StackQuestions.NearestSmallerToRightIndex();
+
+            //Console.WriteLine("*******************************************************************");
+
+            //var left = StackQuestions.NearestSmallerToLeftIndex();
+            //Console.WriteLine("********************* WIDTH ARARRRRRRRRR****************************");
+
+            //int[] width = new int[right.Length];
+            //for (int i = 0; i < right.Length; i++)
+            //{
+            //    width[i] = right[i] - left[i] - 1;
+            //}
+
+            //foreach (var item in width)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //Console.WriteLine("********************* WIDTH ARARRRRRRRRR****************************");
+
+            //int[] area = new int[width.Length];
+            //for (int i = 0; i < width.Length; i++)
+            //{
+            //    area[i] = width[i] * arr[i];
+            //}
+
+            //foreach (var item in area)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            StackQuestions.ValidParenthesis();
+
+
+            #endregion
 
 
 
