@@ -24,12 +24,10 @@ namespace LeetCode.Medium
                 }
             }
 
-
             foreach (var num in nums)
             {
                 int count = 0;
                 int prevNum = num-1;
-
                 if (!numsMap.ContainsKey(prevNum)) {
                     int nextNum = num + 1;
                     count += 1;

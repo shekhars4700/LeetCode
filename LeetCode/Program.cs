@@ -1,4 +1,5 @@
 ﻿using LeetCode.Medium;
+using LeetCode.Recursion;
 using LeetCode.Sliding_Window;
 using LeetCode.Stack;
 using LeetCode.Two_Pointer;
@@ -96,12 +97,23 @@ namespace LeetCode
             //{
             //    Console.Write(item + " ");
             //}
-            StackQuestions.ValidParenthesis();
 
-
+            //StackQuestions.NearestGreaterToRight();
+            //StackQuestions.ValidParenthesis();
+            //StackQuestions.ReversePolishNotification();
+            //StackQuestions.DailyTempratures();
             #endregion
 
+            #region Recursion
+            //Console.WriteLine(0);
+            //Console.WriteLine(1);
+            //Console.WriteLine(Recursion.Fib(5));
+            //Recursion.insertionSort();
+            //Recursion.SortAnStack();
+            //Console.WriteLine(LeetCode.Recursion.KthSymbol.Solve(3,4));
 
+            PermiutationWithSpace.main();
+            #endregion
 
         }
     }
