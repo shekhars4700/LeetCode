@@ -1,4 +1,5 @@
-﻿using LeetCode.Medium;
+﻿using LeetCode.Binary_Search;
+using LeetCode.Medium;
 using LeetCode.Recursion;
 using LeetCode.Sliding_Window;
 using LeetCode.Stack;
@@ -66,37 +67,8 @@ namespace LeetCode
 
 
             #region Stack Questions
-
-            //int[] arr = new int[] { 6, 2, 5, 4, 5, 1, 6 };
-            //var right = StackQuestions.NearestSmallerToRightIndex();
-
-            //Console.WriteLine("*******************************************************************");
-
-            //var left = StackQuestions.NearestSmallerToLeftIndex();
-            //Console.WriteLine("********************* WIDTH ARARRRRRRRRR****************************");
-
-            //int[] width = new int[right.Length];
-            //for (int i = 0; i < right.Length; i++)
-            //{
-            //    width[i] = right[i] - left[i] - 1;
-            //}
-
-            //foreach (var item in width)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //Console.WriteLine("********************* WIDTH ARARRRRRRRRR****************************");
-
-            //int[] area = new int[width.Length];
-            //for (int i = 0; i < width.Length; i++)
-            //{
-            //    area[i] = width[i] * arr[i];
-            //}
-
-            //foreach (var item in area)
-            //{
-            //    Console.Write(item + " ");
-            //}
+            //RainWaterTrapping.Trap(new int[] {3,0,0,2,0,4});
+            //MaximumAreaInHistogram.main();
 
             //StackQuestions.NearestGreaterToRight();
             //StackQuestions.ValidParenthesis();
@@ -112,7 +84,17 @@ namespace LeetCode
             //Recursion.SortAnStack();
             //Console.WriteLine(LeetCode.Recursion.KthSymbol.Solve(3,4));
 
-            PermiutationWithSpace.main();
+            //PermiutationWithSpace.main();
+
+            //Print_N_Bit.main();
+
+            #endregion
+
+
+            #region  Binary Search
+
+            BinarSearch.SearchUsingRec(new int[] { 0},0);
+
             #endregion
 
         }
