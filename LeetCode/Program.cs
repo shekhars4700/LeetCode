@@ -92,9 +92,11 @@ namespace LeetCode
 
 
             #region  Binary Search
-
-            BinarSearch.SearchUsingRec(new int[] { 0},0);
-
+            //BinarSearch.SearchUsingRec(new int[] { 0},0);
+            //FirstnLastElement.SearchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 8);
+            //Console.WriteLine(FindTheMinimum.FindMin(new int[] { 3, 4, 5, 6, 1, 2 }, 2));
+            FindCeil.find(new int[] {1,2,3,5,8,10,10,12}, 9);
+            FindCeil.find(new int[] { 1, 2, 3, 5, 6, 7, 8, 8 }, 4);
             #endregion
 
         }
