@@ -95,8 +95,25 @@ namespace LeetCode
             //BinarSearch.SearchUsingRec(new int[] { 0},0);
             //FirstnLastElement.SearchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 8);
             //Console.WriteLine(FindTheMinimum.FindMin(new int[] { 3, 4, 5, 6, 1, 2 }, 2));
-            FindCeil.find(new int[] {1,2,3,5,8,10,10,12}, 9);
-            FindCeil.find(new int[] { 1, 2, 3, 5, 6, 7, 8, 8 }, 4);
+            //FindCeil.find(new int[] {1,2,3,5,8,10,10,12}, 9);
+            //FindCeil.find(new int[] { 1, 2, 3, 5, 6, 7, 8, 8 }, 4);
+            //Console.WriteLine(SmallestLetterGreater.NextGreatestLetter(new char[] { 'c', 'f', 'j' }, 'a'));
+
+            //Console.WriteLine(FirstOccuranceInInfiniteArray.find(new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1 }, 1));
+            //Console.WriteLine(MinDiffElement.find(new int[] { 1,3,5,8,10,15},12));
+
+            //Console.WriteLine(PeakElement.find(new int[] { 1, 2 }));
+            //Console.WriteLine(PeakElement.find(new int[] { 2, 1 }));
+            //Console.WriteLine(PeakElement.find(new int[] { 1, 2, 1, 3, 5, 6, 4 }));
+
+            Console.WriteLine(SearchMatrix.Search(new int[][]
+            {
+                new int[] {1,3,5,7},
+                new int[] {10, 11, 16, 20},
+                new int[] {23, 30, 34, 60}
+            },13));
+
+
             #endregion
 
         }
