@@ -14,16 +14,11 @@ namespace LeetCode
 
         {
             Solution solution = new Solution();
-
-
-
             #region Medium
             MediumSolution mediumSolution = new MediumSolution();
             SlidingWindow slidingWindow = new SlidingWindow();
             //mediumSolution.LongestConsecutive(new int[] { 100, 4, 200, 1, 3, 2 });
             #endregion
-
-
             #region TWO POINTERS
             TwoPointer twoPointer = new TwoPointer();
 
@@ -54,18 +49,12 @@ namespace LeetCode
 
 
             #endregion
-
-
-
             #region SlidingWindow
             //Console.WriteLine(slidingWindow.printFirstNegativeInteger(new long[] { -8, 2, 3, -6, 10 },5,2));
 
             // Console.WriteLine(slidingWindow.LengthOfLongestSubstring("abcabcbb"));
 
             #endregion
-
-
-
             #region Stack Questions
             //RainWaterTrapping.Trap(new int[] {3,0,0,2,0,4});
             //MaximumAreaInHistogram.main();
@@ -75,7 +64,6 @@ namespace LeetCode
             //StackQuestions.ReversePolishNotification();
             //StackQuestions.DailyTempratures();
             #endregion
-
             #region Recursion
             //Console.WriteLine(0);
             //Console.WriteLine(1);
@@ -89,9 +77,10 @@ namespace LeetCode
             //Print_N_Bit.main();
 
             #endregion
-
-
             #region  Binary Search
+
+            //FindInAlmostSortedArray.findTarget(new int[] { 5, 6, 7, 1, 2, 3, 4 }, 6);
+
             //BinarSearch.SearchUsingRec(new int[] { 0},0);
             //FirstnLastElement.SearchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 8);
             //Console.WriteLine(FindTheMinimum.FindMin(new int[] { 3, 4, 5, 6, 1, 2 }, 2));
@@ -106,15 +95,25 @@ namespace LeetCode
             //Console.WriteLine(PeakElement.find(new int[] { 2, 1 }));
             //Console.WriteLine(PeakElement.find(new int[] { 1, 2, 1, 3, 5, 6, 4 }));
 
-            Console.WriteLine(SearchMatrix.Search(new int[][]
-            {
-                new int[] {1,3,5,7},
-                new int[] {10, 11, 16, 20},
-                new int[] {23, 30, 34, 60}
-            },13));
+            //Console.WriteLine(SearchMatrix.Search(new int[][]
+            //{
+            //    new int[] {1,3,5,7},
+            //    new int[] {10, 11, 16, 20},
+            //    new int[] {23, 30, 34, 60}
+            //},13));
 
+            //Console.WriteLine(MinimumNoOfPages.find(new int[] {10, 20, 30, 40},2));
+            //Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 3, 6, 7, 11 }, 8));
+            //Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 30, 11, 23, 4, 20 }, 5));
+            Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 805306368, 805306368, 805306368 }, 1000000000));
+            #endregion
+
+
+
+            #region LinkedList
 
             #endregion
+
 
         }
     }
