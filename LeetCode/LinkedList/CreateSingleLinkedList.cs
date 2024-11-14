@@ -6,56 +6,54 @@ using System.Threading.Tasks;
 
 namespace LeetCode.LinkedList
 {
-    public class Node {
-        public int value;
-        public Node next;
-        public Node(int value)
+    public class ListListNode
+    {
+        public int val;
+        public ListListNode next;
+        public ListListNode(int val = 0, ListListNode next = null)
         {
-            this.value = value;
-        }
-        public Node(int value, Node next)
-        {
-            this.value = value;
+            this.val = val;
             this.next = next;
         }
     }
     public static class CreateSingleLinkedList
     {
-        public static Node Create(List<int> intList) {
-            Node head = null;
-            Node mover = null;
+        public static ListNode Create(List<int> intList) {
+            ListNode head = null;
+            ListNode mover = null;
 
             foreach (int i in intList)
             {
                 if (head == null) { 
-                    head = new Node(i);
+                    head = new ListNode(i);
                     mover = head;
                 }
                 else
                 {
-                    Node temp = new Node(i);
+                    ListNode temp = new ListNode(i);
                     mover.next = temp;
+                    mover = temp;
                 }
             }
             return head;
         }
         public static void Print(List<int> intList)
         {
-            Node head = Create(intList);
-            Node mover = head;
+            ListNode head = Create(intList);
+            ListNode mover = head;
             while (mover != null)
             {
-                Console.WriteLine(mover.value);
+                Console.WriteLine(mover.val);
                 mover = mover.next;
             }
         }
         public static bool Find(List<int> intList, int k)
         {
-            Node head = Create(intList);
-            Node mover = head;
+            ListNode head = Create(intList);
+            ListNode mover = head;
             while (mover != null)
             {
-                if (mover.value == k)
+                if (mover.val == k)
                 {
                     return true;
                 }
@@ -64,10 +62,10 @@ namespace LeetCode.LinkedList
             return false;
         }
 
-        public static int Count(List<int> intList, int k)
+        public static int Count(List<int> intList)
         {
-            Node head = Create(intList);
-            Node mover = head;
+            ListNode head = Create(intList);
+            ListNode mover = head;
             int count = 0;
             while (mover != null)
             {

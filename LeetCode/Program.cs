@@ -1,10 +1,12 @@
 ﻿using LeetCode.Binary_Search;
+using LeetCode.LinkedList;
 using LeetCode.Medium;
 using LeetCode.Recursion;
 using LeetCode.Sliding_Window;
 using LeetCode.Stack;
 using LeetCode.Two_Pointer;
 using System;
+using System.Collections.Generic;
 
 namespace LeetCode
 {
@@ -105,12 +107,21 @@ namespace LeetCode
             //Console.WriteLine(MinimumNoOfPages.find(new int[] {10, 20, 30, 40},2));
             //Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 3, 6, 7, 11 }, 8));
             //Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 30, 11, 23, 4, 20 }, 5));
-            Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 805306368, 805306368, 805306368 }, 1000000000));
+            //Console.WriteLine(KokoEatingBananas.MinEatingSpeed(new int[] { 805306368, 805306368, 805306368 }, 1000000000));
             #endregion
 
 
 
             #region LinkedList
+            var abc = CreateSingleLinkedList.Create(new List<int> { 2, 4, 3 });
+            var def = CreateSingleLinkedList.Create(new List<int> { 5, 6, 4 });
+            //Console.WriteLine(CreateSingleLinkedList.Count(new List<int> { 32, 65, 213, 568, 142, 123, 5215, 7, 6486234, 131, 2 }));
+            //Console.WriteLine(CreateSingleLinkedList.Find(new List<int> { 32, 65, 213, 568, 142, 123, 5215, 7, 6486234, 131, 2 },7));
+            //ReverseLinkedList.ReverseListV2(abc);
+
+            //MergeTwoLL.MergeTwoLists(abc,def);
+
+            AddTwoLists.AddTwoNumbers(abc, def);
 
             #endregion
 

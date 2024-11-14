@@ -1,9 +1,12 @@
-﻿using LeetCode.LinkedList;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LinkedList
 {
-    class DeleteMiddleElementFromAStack
+    public static class DeletionInLinkedList
     {
         public static ListNode DeletionOfHead(ListNode head)
         {
@@ -31,7 +34,7 @@ namespace LeetCode
             prev.next = null;
             return head;
         }
-        
+
         public static ListNode DeletionAtK(ListNode head, int k)
         {
             if (k == 1)
@@ -46,7 +49,7 @@ namespace LeetCode
                 node = node.next;
                 k -= 1;
             }
-            if (k == 0)
+            if (k == 1)
             {
                 prev.next = node.next;
             }
@@ -61,17 +64,14 @@ namespace LeetCode
             }
             ListNode prev = head;
             ListNode node = head.next;
-            while (node != null && node.val == k)
+            while (node != null && node.val != k)
             {
                 prev = node;
                 node = node.next;
             }
-            if (node.next != null)
+            if (node != null)
             {
                 prev.next = node.next;
-            }
-            else {
-                prev.next = null;
             }
             return head;
         }
