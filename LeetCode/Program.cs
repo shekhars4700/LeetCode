@@ -121,8 +121,10 @@ namespace LeetCode
 
             //MergeTwoLL.MergeTwoLists(abc,def);
 
-            AddTwoLists.AddTwoNumbers(abc, def);
+            //AddTwoLists.AddTwoNumbers(abc, def);
+            //Add1ToLL.Main(new int[] { 9, 9, 9 });
 
+            LinkedListIntersection.GetIntersectionNode(abc, def);
             #endregion
 
 

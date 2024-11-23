@@ -8,9 +8,9 @@ namespace LeetCode.LinkedList
 {
     public static class EvenOddLL
     {
-        public static ListNode OddEvenList(ListNode head)
-        {
+        //public static ListNode OddEvenList(ListNode head)
+        //{
 
-        }
+        //}
     }
 }
