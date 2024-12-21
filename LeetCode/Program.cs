@@ -1,9 +1,11 @@
-﻿using LeetCode.Binary_Search;
+﻿using LeetCode.Backtracking;
+using LeetCode.Binary_Search;
 using LeetCode.LinkedList;
 using LeetCode.Medium;
 using LeetCode.Recursion;
 using LeetCode.Sliding_Window;
 using LeetCode.Stack;
+using LeetCode.Trees;
 using LeetCode.Two_Pointer;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,7 @@ namespace LeetCode
 
         {
             Solution solution = new Solution();
+            Subs.AddSpaces("LeetcodeHelpsMeLearn",new int[] { 8, 13, 15});
             #region Medium
             MediumSolution mediumSolution = new MediumSolution();
             SlidingWindow slidingWindow = new SlidingWindow();
@@ -55,6 +58,7 @@ namespace LeetCode
             //Console.WriteLine(slidingWindow.printFirstNegativeInteger(new long[] { -8, 2, 3, -6, 10 },5,2));
 
             // Console.WriteLine(slidingWindow.LengthOfLongestSubstring("abcabcbb"));
+            //SubArrayCOunt.SubarraySum(new int[] { 1},0);
 
             #endregion
             #region Stack Questions
@@ -113,8 +117,8 @@ namespace LeetCode
 
 
             #region LinkedList
-            var abc = CreateSingleLinkedList.Create(new List<int> { 2, 4, 3 });
-            var def = CreateSingleLinkedList.Create(new List<int> { 5, 6, 4 });
+            //var abc = CreateSingleLinkedList.Create(new List<int> { 2, 4, 3 });
+            //var def = CreateSingleLinkedList.Create(new List<int> { 5, 6, 4 });
             //Console.WriteLine(CreateSingleLinkedList.Count(new List<int> { 32, 65, 213, 568, 142, 123, 5215, 7, 6486234, 131, 2 }));
             //Console.WriteLine(CreateSingleLinkedList.Find(new List<int> { 32, 65, 213, 568, 142, 123, 5215, 7, 6486234, 131, 2 },7));
             //ReverseLinkedList.ReverseListV2(abc);
@@ -124,9 +128,22 @@ namespace LeetCode
             //AddTwoLists.AddTwoNumbers(abc, def);
             //Add1ToLL.Main(new int[] { 9, 9, 9 });
 
-            LinkedListIntersection.GetIntersectionNode(abc, def);
+            //LinkedListIntersection.GetIntersectionNode(abc, def);
             #endregion
 
+
+
+            #region Back Tracking
+            //PermutationWithBT.Permute(new int[]{1, 2});
+            // PermutationOfString.Permute("abc");
+            CombinationSumUsingRecc.CombinationSum(new int[] { 2, 3, 5 }, 10);
+            #endregion
+
+
+            #region Trees
+            var root = BinaryTree.CreateTreeFromList(new List<int?> { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10});
+            //PreorderTraversal.traverse(root);
+            #endregion
 
         }
     }
