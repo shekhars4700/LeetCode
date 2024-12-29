@@ -136,12 +136,16 @@ namespace LeetCode
             #region Back Tracking
             //PermutationWithBT.Permute(new int[]{1, 2});
             // PermutationOfString.Permute("abc");
-            CombinationSumUsingRecc.CombinationSum(new int[] { 2, 3, 5 }, 10);
+            //CombinationSumUsingRecc.CombinationSum(new int[] { 2, 3, 5 }, 10);
+            //NonDecreasingSubSequence.FindSubsequences(new int[] { 4, 6,7});
+            //PalindromPartitioning.Partition("aab");
+            //CombinationOFPhoneNumber.LetterCombinations("5");
+            UniqueSubSets.SubsetsWithDup(new int[] { 1, 2, 2 });
             #endregion
 
 
             #region Trees
-            var root = BinaryTree.CreateTreeFromList(new List<int?> { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10});
+            //var root = BinaryTree.CreateTreeFromList(new List<int?> { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10});
             //PreorderTraversal.traverse(root);
             #endregion
 
